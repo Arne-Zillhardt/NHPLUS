@@ -93,6 +93,7 @@ public class SetUpDB {
             dao.create(new Patient("Ahmet", "Yilmaz", convertStringToLocalDate("1941-02-22"), "3", "013", "normal"));
             dao.create(new Patient("Hans", "Neumann", convertStringToLocalDate("1955-12-12"), "2", "001", "sehr vermögend"));
             dao.create(new Patient("Elisabeth", "Müller", convertStringToLocalDate("1958-03-07"), "5", "110", "arm"));
+            dao.create(new Patient("Schwerk", "Sören", convertStringToLocalDate("1958-03-07"), "10", "187", "zu reich"));
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -111,6 +112,7 @@ public class SetUpDB {
             dao.create(new Treatment(14, 4, convertStringToLocalDate("2023-08-24"), convertStringToLocalTime("09:30"), convertStringToLocalTime("10:15"), "KG", "Lympfdrainage"));
             dao.create(new Treatment(16, 6, convertStringToLocalDate("2023-08-31"), convertStringToLocalTime("13:30"), convertStringToLocalTime("13:45"), "Toilettengang", "Hilfe beim Toilettengang; Patientin klagt über Schmerzen beim Stuhlgang. Gabe von Iberogast"));
             dao.create(new Treatment(17, 6, convertStringToLocalDate("2023-09-01"), convertStringToLocalTime("16:00"), convertStringToLocalTime("17:00"), "KG", "Massage der Extremitäten zur Verbesserung der Durchblutung"));
+            dao.create(new Treatment(18, 7, convertStringToLocalDate("2023-10-01"), convertStringToLocalTime("10:00"), convertStringToLocalTime("13:20"), "Noten vergabe", "Das gibt eine 6 noich!"));
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
